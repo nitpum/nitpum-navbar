@@ -1,0 +1,156 @@
+/*!
+* Copyright nitpum (https://git.io/nitpum)
+*/
+.navbar {
+    margin: 0;
+    background-color: #FFF;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.navbar-dropshadow {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
+}
+.navbar.navbar-dropshadow-on-fixed.fixed {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
+}
+
+.navbar.fixed {
+    position:fixed;
+    width:100%;
+    top:0;
+}
+.nav-brand {
+    float: left;
+    margin: 0;    
+    overflow: hidden;
+    max-width: 48px;
+    max-height: 48px;    
+    box-sizing: border-box;
+    padding: 5px;
+}
+.nav-brand.nav-brand-round {
+    border-radius: 40px;
+}
+.nav-brand.nav-brand-round img {
+    border-radius: 40px;
+}
+.nav-brand img {
+    max-width: 100%;
+    width: 100%;
+}
+.nav-title {    
+    float: left;
+    margin: 0;
+    height: 48px;
+    padding-top: 14px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+.nav-title a {
+    text-decoration: none;
+    color: #000;
+}
+.nav-content {
+    color: #000;
+    position: relative;                
+    overflow: hidden;
+    max-width: 900px;
+    margin:auto;
+}
+.nav-content ul {
+    float:left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+.nav-content ul li {
+    float:left;
+    transition: all 0.3s linear;
+}
+.nav-content ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    text-align: center;
+}
+.nav-burger button:hover,
+.nav-content ul li a:hover {
+    background-color: #f5f5f5;
+}
+.nav-burger {
+    top: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 18px 18px;
+    transition: all 0.2s linear;
+}
+.nav-burger:hover,
+.nav-burger:focus {
+    background-color: #f5f5f5;
+}
+.nav-burger button {
+    display: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: absolute;
+    top:0;
+    right:0;
+    color: #000;
+    border:0px solid;
+    background-color: transparent;
+}
+.nav-burger span {
+    width: 100%;
+    background-color: #000;
+    height: 2px;
+    display: block;    
+    margin-bottom: 5px;
+    max-width: 25px;
+}
+
+@media screen and (max-width:680px) {
+    .nav-brand {
+        float:none;
+    }
+    .nav-title {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 15px 60px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .nav-burger {   
+        opacity: 100;
+    }
+    .nav-content ul {
+        display: none;
+        width: 100%;
+        overflow-y: scroll;
+        max-height: 200px;
+    }
+    .nav-content.open ul {
+        display: block;
+    }
+    .nav-content.open ul li {
+        float: none;
+        display: block;
+    }
+    .nav-content.open ul li a {
+        text-align: left;
+        width: 100%;
+    }
+}
