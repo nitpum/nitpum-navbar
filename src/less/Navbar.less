@@ -1,0 +1,35 @@
+.navbar {
+  margin: 0;
+  background-color: #FFF;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+  &.fixed {
+    position:fixed;
+    width:100%;
+
+    &.navbar-dropshadow-on-fixed {
+      .box-shadow(0 0px 5px 0 rgba(0,0,0,0.1));
+    }
+
+    &.top-fixed {
+      top:0;
+      &.hidden {
+        .transform(translateY(-100%))
+      }
+    }
+    &.bottom-fixed {
+      bottom: 0;
+      &.hidden {
+        .transform(translateY(100%))
+      }
+    }
+
+  } 
+
+  @import "Brand.less";
+  @import "Title.less";
+  @import "Content.less";
+  @import "Burger.less";
+
+}

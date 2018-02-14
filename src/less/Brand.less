@@ -1,0 +1,27 @@
+.nav-brand {
+  float: left;
+  margin: 0;    
+  overflow: hidden;
+  max-width: 48px;
+  max-height: 48px;    
+  box-sizing: border-box;
+  padding: 5px;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &.nav-brand-round {
+    border-radius: 100px;
+
+    img {
+      border-radius: 100px;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    float: none;
+  }
+
+}

@@ -16,13 +16,45 @@
                 border-bottom: 1px solid #ddd;
             }
         </style>
-        <link href="nitpum-blogspot-navbar.css" rel="stylesheet" />
+        <link href="dist/css/nitpum-navbar.css" rel="stylesheet" />
     </head>
     <body>
 
-        <div id="main-navbar" class="navbar navbar-dropshadow-on-fixed">
+        <div id="main-navbar" class="navbar navbar-dropshadow-on-fixed navbar-fixed-when-scroll-pass navbar-hide-scrolling top-fixed">
             <div id="nav" class="nav-content">
-                <div class="nav-brand nav-brand-round"><img src="https://static.nitpum.com/img/logo/logo_64.png"/></div>
+                <div class="nav-back">
+                    <span class="arrow left"></span>
+                </div>
+                <div class="nav-brand nav-brand-round"><img src="https://assets.nitpum.com/img/logo/64x64.png"/></div>
+                <div class="nav-title"><a href="#">nitpum</a></div>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+                <a class="nav-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="navbar" class="navbar navbar-dropshadow-on-fixed navbar-hide-scrolling fixed bottom-fixed">
+            <div id="nav" class="nav-content">
+                <div class="nav-back">
+                    <span class="arrow left"></span>
+                </div>
+                <div class="nav-brand nav-brand-round"><img src="https://assets.nitpum.com/img/logo/64x64.png"/></div>
                 <div class="nav-title"><a href="#">nitpum</a></div>
                 <ul>
                     <li>
@@ -60,7 +92,7 @@
                 if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
                 s.parentNode.insertBefore(o, s);
             }
-            async("nitpum-blogspot-navbar.js", function () {});
+            async("dist/js/nitpum-navbar.js", function () {});
         </script>
 
     </body>

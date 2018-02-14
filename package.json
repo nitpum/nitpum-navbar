@@ -1,0 +1,25 @@
+{
+  "name": "nitpum-navbar",
+  "version": "1.0.0",
+  "description": "Simple navbar",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitpum/nitpum-navbar.git"
+  },
+  "author": "nitpum (nitpum@nitpum.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nitpum/nitpum-navbar/issues"
+  },
+  "homepage": "https://github.com/nitpum/nitpum-navbar#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.5.0",
+    "gulp-minify": "^2.1.0"
+  }
+}

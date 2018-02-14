@@ -1,0 +1,5 @@
+# NPM or Node.js
+node_modules/
+
+# IDE
+.vscode/

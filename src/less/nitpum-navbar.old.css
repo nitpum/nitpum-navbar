@@ -20,6 +20,24 @@
     width:100%;
     top:0;
 }
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.arrow.left {
+     transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.nav-back {
+    float: left;
+    height: 48px;
+    width: 20px;
+    padding: 15px 5px;
+    box-sizing: border-box;
+    border-right: 1px solid #f6f6f6;
+}
 .nav-brand {
     float: left;
     margin: 0;    
