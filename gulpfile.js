@@ -6,12 +6,20 @@ const minify = require('gulp-minify');
 
 
 gulp.task('less', () => {
-  return gulp.src('./src/less/**/_main.less') // Get main file
+  var normal = gulp
+    .src('./src/less/**/_main.less') // Get main file
     .pipe(concat('nitpum-navbar.css')) // Combine into single file
+    .pipe(less())
+    .pipe(gulp.dest('./dist/css/'))
+
+  var minify = gulp
+    .src('./src/less/**/_main.less') // Get main file
+    .pipe(concat('nitpum-navbar.min.css')) // Combine into single file
     .pipe(less({
       compress : true // Simply minify code
     }))
     .pipe(gulp.dest('./dist/css/'))
+  return [normal, minify];
 });
 
 gulp.task('js', function () {
