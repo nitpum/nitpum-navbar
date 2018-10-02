@@ -44,3 +44,18 @@ gulp.task('autocompile', function () {
   gulp.watch('./src/less/**/*.less', ['less']);
   gulp.watch('./src/js/**/*.js', ['js']);
 });
+
+// 
+// Automation
+//  
+function getPackageJsonVersion() {
+  // We parse the json file instead of using require because require caches
+  // multiple calls so the version number won't be updated
+  return JSON.parse(fs.readFileSync('./package.json', 'utf8')).version;
+};
+
+gulp.task('bump-version', function () {
+  return gulp.src(['./package.json'])
+    .pipe(bump({ type: 'minor' }))
+    .pipe(gulp.dest('./'))
+});
