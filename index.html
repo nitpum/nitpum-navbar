@@ -1,99 +1,104 @@
 <!doctype html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <style>
-            body {
-                margin:0;
-                font-family: Arial, sans-serif;
-                height: 2000px;
-            }
-            .container {
-                margin: auto;
-                max-width: 900px;
-            }
-            h1 {
-                border-bottom: 1px solid #ddd;
-            }
-        </style>
-        <link href="dist/css/nitpum-navbar.css" rel="stylesheet" />
-    </head>
-    <body>
 
-        <div id="main-navbar" class="navbar navbar-dropshadow-on-fixed navbar-fixed-when-scroll-pass navbar-hide-scrolling top-fixed">
-            <div id="nav" class="nav-content">
-                <div class="nav-back">
-                    <span class="arrow left"></span>
-                </div>
-                <div class="nav-brand nav-brand-round"><img src="https://assets.nitpum.com/img/logo/64x64.png"/></div>
-                <div class="nav-title"><a href="#">nitpum</a></div>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-                <a class="nav-burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 2000px;
+        }
+
+        .container {
+            margin: auto;
+            max-width: 900px;
+        }
+
+        h1 {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+    <link href="dist/css/nitpum-navbar.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="main-navbar" class="navbar navbar-dropshadow-on-fixed navbar-fixed-when-scroll-pass navbar-hide-scrolling top-fixed">
+        <div id="nav" class="nav-content">
+            <div class="nav-back">
+                <span class="arrow left"></span>
             </div>
+            <div class="nav-brand nav-brand-round"><img src="https://assets.nitpum.com/img/logo/64x64.png" /></div>
+            <div class="nav-title"><a href="#">nitpum</a></div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+            <a class="nav-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
+    </div>
 
-        <div id="navbar" class="navbar navbar-dropshadow-on-fixed navbar-hide-scrolling fixed bottom-fixed">
-            <div id="nav" class="nav-content">
-                <div class="nav-back">
-                    <span class="arrow left"></span>
-                </div>
-                <div class="nav-brand nav-brand-round"><img src="https://assets.nitpum.com/img/logo/64x64.png"/></div>
-                <div class="nav-title"><a href="#">nitpum</a></div>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-                <a class="nav-burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
+    <div id="navbar" class="navbar navbar-dropshadow-on-fixed navbar-hide-scrolling fixed bottom-fixed">
+        <div id="nav" class="nav-content">
+            <div class="nav-back">
+                <span class="arrow left"></span>
             </div>
+            <div class="nav-brand nav-brand-round"><img src="https://assets.nitpum.com/img/logo/64x64.png" /></div>
+            <div class="nav-title"><a href="#">nitpum</a></div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+            <a class="nav-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
+    </div>
 
-        <div class="container">
-            <h1>Hello world !</h1>
-            The quick brown fox jumps over the lazy dog
-        </div>
+    <div class="container">
+        <h1>Hello world !</h1>
+        The quick brown fox jumps over the lazy dog
+    </div>
 
-        <script>
-            function async(u, c) {
-                var d = document, t = 'script',
-                    o = d.createElement(t),
-                    s = d.getElementsByTagName(t)[0];
-                o.src = u;
-                if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-                s.parentNode.insertBefore(o, s);
-            }
-            async("dist/js/nitpum-navbar.js", function () {});
-        </script>
+    <script>
+        function async(u, c) {
+            var d = document, t = 'script',
+                o = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            o.src = u;
+            if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+            s.parentNode.insertBefore(o, s);
+        }
+        async("dist/js/nitpum-navbar.js", function () { });
+    </script>
 
-    </body>
+</body>
+
 </html>
